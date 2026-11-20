@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite que el sitio se adapte a celulares, tablets y computadoras -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ReShop - Rescata hoy</title>
+
+    <!-- Conectamos el archivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <!-- Se genera con js/ui.js (mismo diseño, enlaces según la sesión) -->
+    <header id="header" class="header"></header>
+
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-contenido">
+
+                <div class="hero-texto">
+
+                    <h1>
+                        Rescata hoy,<br>
+                        <span>disfruta más,</span><br>
+                        desperdicia menos.
+                    </h1>
+
+                    <p>
+                        Descubre excedentes de pequeños
+                        negocios cerca de ti.
+                    </p>
+
+                    <!-- Buscador -->
+                    <form class="buscador" action="explorar.html" method="get" role="search">
+
+                        <div class="campo-busqueda">
+                            <span aria-hidden="true">⌕</span>
+                            <input
+                                type="search"
+                                name="q"
+                                placeholder="¿Qué quieres rescatar?"
+                                aria-label="Buscar productos"
+                            >
+                        </div>
+
+                        <button type="submit" class="boton-cerca">
+                             Buscar
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- Imagen principal -->
+                <div class="hero-imagen">
+
+                    <img
+                        src="img/Inicio.png"
+                        alt="Croissants de ReShop"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORÍAS ================= -->
+
+        <section class="seccion categorias">
+
+            <h2>Explora por categoría</h2>
+
+            <div class="categorias-lista">
+
+                <a href="explorar.html?categoria=todos" class="categoria activa-categoria">
+
+                    <img
+                        src="img/categoria-todos.png"
+                        alt=""
+                    >
+
+                    <span>Todos</span>
+
+                </a>
+
+
+                <a href="explorar.html?categoria=panaderia" class="categoria">
+
+                    <img
+                        src="img/categoria-panaderia.png"
+                        alt=""
+                    >
+
+                    <span>Panadería</span>
+
+                </a>
+
+
+                <a href="explorar.html?categoria=postres" class="categoria">
+
+                    <img
+                        src="img/categoria-postres.png"
+                        alt=""
+                    >
+
+                    <span>Postres</span>
+
+                </a>
+
+
+                <a href="explorar.html?categoria=comida" class="categoria">
+
+                    <img
+                        src="img/categoria-comida.png"
+                        alt=""
+                    >
+
+                    <span>Comida</span>
+
+                </a>
+
+
+                <a href="explorar.html?categoria=bebidas" class="categoria">
+
+                    <img
+                        src="img/categoria-bebidas.png"
+                        alt=""
+                    >
+
+                    <span>Bebidas</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESCATES RECIENTES ================= -->
+
+        <section class="seccion productos-seccion">
+
+            <div class="titulo-seccion">
+
+                <h2>Rescates recientes</h2>
+
+                <a href="explorar.html">Ver todo</a>
+
+            </div>
+
+
+            <!-- Se llena con productos publicados por los emprendedores (js/paginas/inicio.js) -->
+            <div class="productos" id="recientes"></div>
+
+        </section>
+
+
+        <!-- ================= MÁS VENDIDOS ================= -->
+
+        <section class="seccion productos-seccion">
+
+            <div class="titulo-seccion">
+
+                <h2>Más vendidos</h2>
+
+                <a href="explorar.html">Ver todo</a>
+
+            </div>
+
+
+            <!-- Se llena con productos publicados por los emprendedores (js/paginas/inicio.js) -->
+            <div class="productos" id="mas-vendidos"></div>
+
+        </section>
+
+
+        <!-- ================= BENEFICIOS / ASIDE ================= -->
+
+        <aside class="beneficios">
+
+            <div class="beneficio">
+
+                <div class="beneficio-icono">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>Evitas desperdicios</h3>
+                    <p>Ayudas al planeta.</p>
+                </div>
+
+            </div>
+
+
+            <div class="beneficio">
+
+                <div class="beneficio-icono">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>Ahorras dinero</h3>
+                    <p>Disfruta más por menos.</p>
+                </div>
+
+            </div>
+
+
+            <div class="beneficio">
+
+                <div class="beneficio-icono">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>Apoyas negocios locales</h3>
+                    <p>Pequeños negocios, grandes historias.</p>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <!-- Se genera con js/ui.js -->
+    <footer id="footer" class="footer"></footer>
+
+
+    <script src="js/datos.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/paginas/inicio.js"></script>
+
+</body>
+
+</html>

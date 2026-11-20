@@ -1,0 +1,126 @@
+{
+    "negocios": [
+        {
+            "id": "usr_demo_cacao",
+            "nombre": "Cacao & Co.",
+            "email": "cacao@reshop.demo",
+            "password": "demo123",
+            "direccion": "San Salvador"
+        },
+        {
+            "id": "usr_demo_central",
+            "nombre": "Panadería Central",
+            "email": "central@reshop.demo",
+            "password": "demo123",
+            "direccion": "San Salvador"
+        },
+        {
+            "id": "usr_demo_dulce",
+            "nombre": "Dulce Momento",
+            "email": "dulce@reshop.demo",
+            "password": "demo123",
+            "direccion": "San Salvador"
+        },
+        {
+            "id": "usr_demo_corndog",
+            "nombre": "Corn dog sv",
+            "email": "corndog@reshop.demo",
+            "password": "demo123",
+            "direccion": "San Salvador"
+        },
+        {
+            "id": "usr_demo_marta",
+            "nombre": "Típicos Doña Marta",
+            "email": "marta@reshop.demo",
+            "password": "demo123",
+            "direccion": "San Salvador"
+        },
+        {
+            "id": "usr_demo_bendicion",
+            "nombre": "Panadería La Bendición de Dios",
+            "email": "bendicion@reshop.demo",
+            "password": "demo123",
+            "direccion": "San Salvador"
+        }
+    ],
+    "productos": [
+        {
+            "id": "prd_demo_cacao",
+            "sellerId": "usr_demo_cacao",
+            "nombre": "Brownies artesanales",
+            "descripcion": "Brownies de chocolate horneados hoy.",
+            "categoria": "postres",
+            "precio": 2.5,
+            "precioOriginal": 4.2,
+            "stock": 6,
+            "imagen": "img/brownies.png",
+            "disponibleHasta": "20:00",
+            "activo": true
+        },
+        {
+            "id": "prd_demo_central",
+            "sellerId": "usr_demo_central",
+            "nombre": "Croissants del día",
+            "descripcion": "Croissants de mantequilla recién horneados.",
+            "categoria": "panaderia",
+            "precio": 3,
+            "precioOriginal": 4.3,
+            "stock": 8,
+            "imagen": "img/croissant.png",
+            "disponibleHasta": "19:00",
+            "activo": true
+        },
+        {
+            "id": "prd_demo_dulce",
+            "sellerId": "usr_demo_dulce",
+            "nombre": "Caja de cupcakes",
+            "descripcion": "Caja surtida de cupcakes decorados.",
+            "categoria": "postres",
+            "precio": 3.5,
+            "precioOriginal": 5.4,
+            "stock": 4,
+            "imagen": "img/cupcakes.png",
+            "disponibleHasta": "18:30",
+            "activo": true
+        },
+        {
+            "id": "prd_demo_corndog",
+            "sellerId": "usr_demo_corndog",
+            "nombre": "Banderillas",
+            "descripcion": "Banderillas de salchicha y queso del día.",
+            "categoria": "comida",
+            "precio": 3,
+            "precioOriginal": 4.3,
+            "stock": 10,
+            "imagen": "img/banderillas.png",
+            "disponibleHasta": "19:00",
+            "activo": true
+        },
+        {
+            "id": "prd_demo_marta",
+            "sellerId": "usr_demo_marta",
+            "nombre": "Pupusas",
+            "descripcion": "Pupusas revueltas y de queso del turno de la tarde.",
+            "categoria": "comida",
+            "precio": 1.1,
+            "precioOriginal": 2.4,
+            "stock": 12,
+            "imagen": "img/pupusas.png",
+            "disponibleHasta": "20:00",
+            "activo": true
+        },
+        {
+            "id": "prd_demo_bendicion",
+            "sellerId": "usr_demo_bendicion",
+            "nombre": "Pan francés",
+            "descripcion": "Bolsa de pan francés horneado esta mañana.",
+            "categoria": "panaderia",
+            "precio": 1,
+            "precioOriginal": 2,
+            "stock": 15,
+            "imagen": "img/pan.png",
+            "disponibleHasta": "18:30",
+            "activo": true
+        }
+    ]
+}

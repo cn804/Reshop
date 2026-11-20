@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar · ReShop</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header id="header" class="header"></header>
+
+    <main class="pagina">
+    
+        <div class="pagina-encabezado">
+            <div>
+                <h1>Explorar rescates</h1>
+                <p>Productos publicados por negocios locales.</p>
+            </div>
+            
+        </div>
+        <form class="filtros" id="filtros" role="search">
+            <div class="campo-busqueda">
+                <span aria-hidden="true">⌕</span>
+                <input type="search" name="q" id="busqueda" placeholder="¿Qué quieres rescatar?" aria-label="Buscar productos">
+            </div>
+            <label class="selector">Ordenar
+                <select name="orden" id="orden">
+                    <option value="recientes">Más recientes</option>
+                    <option value="precio-asc">Precio: menor a mayor</option>
+                    <option value="precio-desc">Precio: mayor a menor</option>
+                </select>
+            </label>
+        </form>
+        <div class="categorias-lista bloque" id="categorias"></div>
+        <div id="aviso-filtro"></div>
+        <p class="texto-gris bloque" id="conteo" aria-live="polite"></p>
+        <div class="productos" id="resultados"></div>
+    </main>
+
+    <footer id="footer" class="footer"></footer>
+
+    <script src="js/datos.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/paginas/explorar.js"></script>
+
+</body>
+
+</html>
